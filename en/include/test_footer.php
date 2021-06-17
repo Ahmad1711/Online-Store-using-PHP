@@ -1,0 +1,12 @@
+<?php
+if(isset($_SESSION["family_id"]))
+{
+include("include/footer_family.php");
+}elseif(isset($_SESSION["customer_id"])){
+	include("include/footer_customer.php");
+}elseif(isset($_SESSION["admin_id"])){
+	include("include/footer_admin.php");
+}else{
+	include("include/footer.php");
+}
+?> 	
